@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    background-color: blue;
+    height: 80vh; /* 100% of vertical height*/
+    min-height: 600px; /*image doesn't get smaller then 600px*/
+    background-image: url('./assets/image-header.jpg');
+    background-position: center bottom;
+    background-size: cover;
+    /* this two is for be able to use flex-grow on main */
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px ;
+    padding-right: 20px;
+}
+
+.menu {
+    display: flex;
+    font-size: 20px;
+    color: white;
+    align-items: center;
+}
+
+.menu span {
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.contact {
+    background-color: white;
+    color: black;
+    padding: 4px 15px;
+    border-radius: 15px;
+    cursor: pointer; /* when you passe the cursor on it */
+    transition: 0.2s all ease-in-out; /* 0.2 secondes*/
+}
+
+.contact:hover {
+    background-color: antiquewhite;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    /* when we use column align-items and justify-content switch directions*/
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 50px;
+    flex-grow: 1; /*main section grow as much as possible*/
+    font-weight: bold;
+}
+
+.arrow {
+    margin-top: 60px;
+}
+
+/* Sections */
+.section1, .section2, .section3 {
+    display: flex;
+    height: 350px;
+}
+
+/* Section text*/
+
+.section1 .left, .section2 .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 .text__container, .section2 .text__container {
+    width: 70%;
+}
+
+.section1 .left h1, .section2 .right h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-family: cursive;
+}
+
+.section1 .left p, .section2 .right p {
+    color: #848391;
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+}
+
+.left .button, .right .button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Learn More img */
+
+.left div img, .right div img {
+    width: 150px;
+}
+
+/* Images */
+
+.left img, .right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* make it even in the two sides of sections*/
+.left, .right {
+    flex: 1;
+}
+
+/* section 4 */
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFBF8;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Title */
+.testimonials h1 {
+    color: #A0A1A2;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+/* Clients */
+
+.clients {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Client Card */
+
+.clients .client {
+    display: flex;
+    flex-direction: column;
+    flex: 0.3; /* give it 30 % width*/
+    align-items: center;
+}
+
+.client p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1;
+    color: #848391;
+}
+
+.client .client-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.client .details {
+    text-align: center;
+}
+
+.client-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.client h4 {
+    color: #A0A1A2;
+    margin-top: 8px;
+}
+
+/* Examples images section */
+
+.examples {
+    display: flex;
+}
+
+.examples div {
+    flex: 0.25;
+}
+
+.examples img {
+    width: 100%;
+    height: 100%;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #90D4C5;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer .logo {
+    color: #2D7465;
+}
+
+.footer__navigation {
+    color: #4F9485;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.footer__navigation span {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.footer__navigation span:hover {
+    color: #2D7465;
+}
+
+.social__media {
+    margin-top: 30px;
+}
+
+.social__media img {
+    padding-right: 20px;
+    cursor: pointer;
+}
