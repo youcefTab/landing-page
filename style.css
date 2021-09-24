@@ -261,7 +261,7 @@
 @media (max-width: 610px) {
 
     .main {
-        font-size: 40px;
+        font-size: 33px;
     }
 
     .section1, .section2, .section3 {
@@ -313,7 +313,6 @@
 
     .menu {
         display: none;
-        
     }
 
     .header {
@@ -331,8 +330,6 @@
         display: flex;
         justify-content: space-evenly;
         flex-basis: 100%;
-        background-color: white;
-        border-radius: 25px;
     }
     
     .mobile {
@@ -342,17 +339,18 @@
     }
 
     .menu.responsive .contact {
-        background-color: none;
+        color: white;
+        background-color: transparent;
     }
 
     .menu.responsive .contact:hover, .menu.responsive .mobile:hover {
-        background-color: black;
-        color: white;
+        background-color: white;
+        color: black;
     }
 
     .menu.responsive span {
         display: block;
-        color: black;
+        color: white;
         font-size: bold;
         margin-right: 0px;
     } 
