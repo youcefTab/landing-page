@@ -303,19 +303,6 @@
 
     /* header*/
 
-    /* .header {
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-
-    .menu {
-        font-size: 18px;
-    }
-
-    .menu span {
-        margin-right: 15px;
-    } */
-
     .header .icon {
         display: block;
     }   
@@ -326,7 +313,7 @@
 
     .menu {
         display: none;
-        font-size: 12px;
+        
     }
 
     .header {
@@ -337,13 +324,40 @@
     }
 
     .menu.responsive {
+        font-size: 12px;
+        margin-top: 10px;
         padding-top: 10px;
+        padding-bottom: 10px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         flex-basis: 100%;
+        background-color: white;
+        border-radius: 25px;
+    }
+    
+    .mobile {
+        padding: 4px 15px;
+        border-radius: 15px;
+        transition: 0.2s all ease-in-out;
+    }
+
+    .menu.responsive .contact {
+        background-color: none;
+    }
+
+    .menu.responsive .contact:hover, .menu.responsive .mobile:hover {
+        background-color: black;
+        color: white;
     }
 
     .menu.responsive span {
         display: block;
+        color: black;
+        font-size: bold;
+        margin-right: 0px;
     } 
+
+    .menu.responsive span:hover {
+        background-color: antiquewhite;
+    }
 }
