@@ -13,9 +13,14 @@
     <div class="wrapper">
         <div class="banner">
             <div class="header">
+                
                 <img class="logo" src="https://svgur.com/i/Zvd.svg">
 
-                <div class="menu">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+
+                <div class="menu" id="myTopnav">
                     <span>About</span>
                     <span>Services</span>
                     <span>Projects</span>
@@ -23,6 +28,7 @@
                         Contact
                     </span>
                 </div>
+
             </div>
 
             <div class="main">
@@ -172,5 +178,16 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "menu") {
+            x.className += " responsive";
+          } else {
+            x.className = "menu";
+          }
+        }
+    </script>
 </body>
 </html>

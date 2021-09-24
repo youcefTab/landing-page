@@ -251,6 +251,10 @@
     cursor: pointer;
 }
 
+.header .icon {
+    display: none;
+    color: #f2f2f2;
+}
 
 /* Media querie */
 
@@ -299,7 +303,7 @@
 
     /* header*/
 
-    .header {
+    /* .header {
         padding-right: 10px;
         padding-left: 10px;
     }
@@ -310,5 +314,35 @@
 
     .menu span {
         margin-right: 15px;
+    } */
+
+    .header .icon {
+        display: block;
+    }   
+
+    .menu span {
+        display: none;
     }
+
+    .menu {
+        display: none;
+    }
+
+    .header {
+        justify-content: space-between;
+        margin-top: 10px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .menu.responsive {
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-basis: 100%;
+    }
+
+    .menu.responsive span {
+        display: block;
+    } 
 }
