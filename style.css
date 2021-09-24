@@ -4,7 +4,6 @@
 }
 
 .banner {
-    background-color: blue;
     height: 80vh; /* 100% of vertical height*/
     min-height: 600px; /*image doesn't get smaller then 600px*/
     background-image: url('./assets/image-header.jpg');
@@ -34,6 +33,10 @@
 .menu span {
     margin-right: 30px;
     cursor: pointer;
+}
+
+.menu span:hover{
+    color: black;
 }
 
 .contact {
@@ -159,15 +162,18 @@
     align-items: center;
 }
 
+
+
 .client p {
     text-align: center;
     margin-bottom: 30px;
+    height: 80px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1;
     color: #848391;
 }
 
-.client .client-image {
+.client .client__image {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -179,7 +185,7 @@
     text-align: center;
 }
 
-.client-image img {
+.client__image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -243,4 +249,66 @@
 .social__media img {
     margin: 8px;
     cursor: pointer;
+}
+
+
+/* Media querie */
+
+@media (max-width: 610px) {
+
+    .main {
+        font-size: 40px;
+    }
+
+    .section1, .section2, .section3 {
+        flex-direction: column;
+        height: auto;
+        padding: 1px 5px;
+    }
+
+    .section1 .left, .section2 .right {
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+
+    .clients {
+        flex-direction: column;
+    }
+
+    .client {
+        margin-top: 50px;
+    }
+
+    .client p {
+        height: 30px;
+    }
+
+    .client img {
+        object-fit: cover;
+    }
+
+    .examples {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .examples div {
+        flex: 0.5%;
+        flex-basis: 50%;
+    }
+
+    /* header*/
+
+    .header {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .menu {
+        font-size: 18px;
+    }
+
+    .menu span {
+        margin-right: 15px;
+    }
 }
